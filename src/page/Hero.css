@@ -1,0 +1,95 @@
+.contain{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    border: 1px solid black;
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateY(-100px); /* Start position off-screen */
+    animation: slideInFromTop 0.9s ease-out forwards; /* Trigger the animation */
+
+  
+
+
+}
+
+
+@keyframes slideInFromTop {
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Final position */
+    }
+  }
+
+
+.leftContainer{
+    
+    padding-top: 13%;
+    padding-left: 5px;
+}
+
+button{
+    background-color: white;
+    border: none;
+    margin: 0px 5px;
+}
+h1{
+    color: #40196D;
+    font-size:xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+.contain p{
+    font-style: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #565656;
+}
+
+
+@media (max-width: 768px) {
+    .contain {
+        flex-direction: column;    /* Stack items vertically */
+        align-items: center;
+        padding-left: 5%;          /* Reduced padding */
+        padding-right: 5%;
+    }
+
+    .leftContainer {
+        text-align: center;        /* Center-align text */
+        padding-top: 5%;
+    }
+
+    h1 {
+        font-size: large;          /* Smaller font size for smaller screens */
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    button {
+        margin: 10px 5px;          /* Adjust spacing */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .contain {
+        padding-left: 2%;          /* Narrow padding */
+        padding-right: 2%;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .rightContainer img {
+        width: 100%;               /* Make images responsive */
+        height: auto;
+    }
+}

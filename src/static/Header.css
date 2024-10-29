@@ -1,0 +1,94 @@
+.top{
+    border: 1px solid black;
+    text-align:  center;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px   ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color:white;
+   
+    
+    
+
+}
+ 
+.hamburger{
+    display: none;
+}
+
+nav a{
+    text-align: center;
+    align-items: center;
+    font-size: large;
+    justify-content: center;
+    color: #40196D;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+.divButton {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin: 0px 20px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.join{
+    background-color: #40196D;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    min-width: 120px;
+}
+.sign{
+    background-color: white;
+    border: none;
+    color: #40196D;
+    font-size: medium;
+    font-weight: bolder;
+}
+button{
+    min-height: 40px;
+    margin: 0px 10px;
+    
+}
+
+
+@media (max-width: 768px) {
+    nav, .divButton {
+        display: none; /* Hide nav and button div */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+}
+
+/* Show mobile menu when active */
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 60px; /* Adjust to place below header */
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.mobile-menu a {
+    margin: 10px 0;
+    font-size: large;
+    color: #40196D;
+    text-decoration: none;
+}

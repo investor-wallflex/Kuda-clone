@@ -1,0 +1,69 @@
+.feature-section {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Space between image and description */
+    border: solid orange;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/* Feature Description */
+.feature-description {
+    display: flex;
+    flex-direction: column; /* Ensure description text is stacked */
+    justify-content: center;
+    order: 1; /* Set the order to 1 to display first */
+}
+
+.feature-description p {
+    font-size: small; /* Default font size */
+    color: black;
+}
+
+.feature-description h2 {
+    font-size: xx-large; /* Default headline size */
+    color: #40196D;
+}
+
+/* Image */
+.feature-section img {
+    order: 2; /* Ensure image order is 2 for default view */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .feature-section {
+        flex-direction: column; /* Stack image and description vertically */
+        gap: 40px; /* Reduce gap for mobile */
+        padding-top: 5%; /* Reduce padding for mobile */
+        padding-bottom: 5%; /* Reduce padding for mobile */
+    }
+
+    .feature-description {
+       
+    }
+
+    .feature-section img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+        
+    }
+
+    .feature-description h2 {
+        font-size: large; /* Reduce font size for smaller screens */
+    }
+
+    .feature-description p {
+        font-size: medium; /* Increase font size slightly for readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-description h2 {
+        font-size: 1.5em; /* Further reduce font size */
+    }
+
+    .feature-description p {
+        font-size: 0.9em; /* Further reduce font size */
+    }
+}

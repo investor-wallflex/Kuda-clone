@@ -1,0 +1,71 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border: 1px solid greenyellow;
+    gap: 100px;
+  }
+  
+  .text-content {
+    max-width: 400px;
+    margin-right: 20px;
+    
+  }
+  
+  .text-content h1 {
+    font-size: 2em;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  .text-content p {
+    font-size: small;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  a{
+    color: #40196D;
+  }
+
+
+  @media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column; /* Stack content vertically */
+        padding: 20px; /* Reduce padding */
+        gap: 40px; /* Reduce gap between text and image */
+    }
+
+    .text-content {
+        margin-right: 0; /* Remove right margin */
+        text-align: center; /* Center-align text for better mobile view */
+    }
+
+    .text-content h1 {
+        font-size: 1.5em; /* Reduce font size on smaller screens */
+    }
+
+    .text-content p {
+        font-size: 0.9em; /* Increase font size slightly for readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .text-content h1 {
+        font-size: 1.2em; /* Further reduce font size */
+    }
+
+    .text-content p {
+        font-size: 0.85em; /* Further reduce font size */
+    }
+
+    .image-content img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

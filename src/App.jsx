@@ -6,6 +6,10 @@ import HeroTwo from "./page/HeroTwo"
 import HeroThree from "./page/HeroThree"
 import HeroFour from "./page/HeroFour"
 import HeroFive from "./page/HeroFive"
+import HeroSix from "./page/HeroSix"
+import HeroSeven from "./page/HeroSeven"
+import HeroEight from "./page/HeroEight"
+import HeroNine from "./page/HeroNine"
 
 
 
@@ -22,6 +26,11 @@ function App() {
       <HeroThree />
       <HeroFour />
       <HeroFive />
+      <HeroSix />
+      <HeroSeven />
+      <HeroEight />
+      <HeroNine />
+      
       <Footer />
 
     </>

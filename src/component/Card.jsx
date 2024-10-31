@@ -8,25 +8,25 @@ import { useState } from "react";
 
 
 function Card () {
-    const[]
-
     
-    totalLikes = 0
-    const increaseLikes=() =>{
-        totalLikes = totalLikes ++;
-    };
+    const [userName , setUserName] = useState("")
+  
 
     return(
         <>
-            <div className="card-wrap">
-            <img src={react} alt="logo" />
+           
+            <center>
+            <h2> wale group of school</h2>
+            <h4>student info entry</h4>
+            <form action="">
+                <input type="text" placeholder="enter user name" /><br />
+                <input type="email" placeholder="email" /><br />
+                <input type="bio" placeholder="enter your bio" />
+            </form>
+                <button>submit</button>
+            </center>
             
-            <div>
-            <button onClick={increaseLikes}>Likes</button>
-            <span>{}</span>
-            </div>
-                
-            </div>
+
         </>
     );
 }

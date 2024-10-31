@@ -3,7 +3,7 @@
     justify-content: space-between;
     padding-left: 15%;
     padding-right: 15%;
-    border: 1px solid black;
+    
     margin-top: 50px;
     opacity: 0;
     transform: translateY(-100px); /* Start position off-screen */

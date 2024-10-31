@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     gap: 100px; /* Space between image and description */
-   
+
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column; /* Ensure description text is stacked */
     justify-content: center;
-    order: 1; /* Set the order to 1 to display first */
+   
 }
 
 .feature-description p {
